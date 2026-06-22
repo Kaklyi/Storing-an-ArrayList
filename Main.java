@@ -27,8 +27,19 @@ public class Main {
             System.out.println("\nStudent #" + (i + 1));
 
             // Name
-            System.out.print("Please enter Student name: ");
-            String name = sc.nextLine();
+            String name = "";
+            boolean validName = false;
+
+            while (!validName) {
+                System.out.print("Please enter Student name: ");
+                name = sc.nextLine();
+
+                if (name.matches("[a-zA-Z ]+")) {
+                    validName = true;
+                } else {
+                    System.out.println("Name can only contain letters. Try again.");
+                }
+            }
 
             // Roll number with validation
             int roll = 0;
