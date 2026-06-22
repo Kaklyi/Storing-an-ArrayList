@@ -3,7 +3,6 @@ import java.util.Scanner;
 
 public class Main {
 
-    // Pretty table printing
     public static void printTable(ArrayList<Student> list) {
         System.out.println("------------------------------------------------------------------------");
         System.out.printf("%-20s %-20s %-20s%n", "Roll #", "Name", "Address");
